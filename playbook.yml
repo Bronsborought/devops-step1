@@ -1,0 +1,24 @@
+- name: Local Configuration with Ansible
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Generate new index.html file
+      copy:
+        dest: ./index.html
+        content: |
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <title>DevOps Ansible</title>
+              <style>
+                  body { font-family: Arial, sans-serif; text-align: center; margin-top: 100px; background-color: #e8f4f8; }
+                  h1 { color: #2c3e50; }
+                  p { color: #34495e; font-size: 1.2em; }
+              </style>
+          </head>
+          <body>
+              <h1>Configured by Ansible! 🚀</h1>
+              <p>Infrastructure by Terraform. Configuration by Ansible.</p>
+          </body>
+          </html>

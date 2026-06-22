@@ -1,0 +1,8 @@
+.git
+.gitignore
+.terraform/
+terraform.exe
+terraform.tfstate
+terraform.tfstate.backup
+main.tf
+playbook.yml

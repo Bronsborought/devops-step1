@@ -26,3 +26,4 @@ resource "docker_container" "nginx_server" {
     internal = 80
     external = 8081
   }
+}
